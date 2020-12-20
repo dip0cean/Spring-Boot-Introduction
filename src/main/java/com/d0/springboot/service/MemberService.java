@@ -3,10 +3,12 @@ package com.d0.springboot.service;
 import com.d0.springboot.domain.Member;
 import com.d0.springboot.repository.MemberRepository;
 import com.d0.springboot.repository.MemoryMemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     private final MemberRepository repository;
 
